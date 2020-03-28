@@ -16,7 +16,7 @@ body {
 
 
 .inner {
-	max-width: 60vw;
-	margin: auto;
-  background-color: green
+	width : 80%;
+  margin : auto;
+  background-color: white;
 }
