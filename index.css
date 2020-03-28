@@ -13,3 +13,10 @@ body {
   margin: 0;
   padding: 0;
 }
+
+
+.inner {
+	max-width: 60vw;
+	margin: auto;
+  background-color: green
+}
