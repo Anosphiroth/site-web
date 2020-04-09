@@ -1,0 +1,123 @@
+
+@charset "UTF-8";
+@import "https://fonts.googleapis.com/css?family=Raleway:100,300,600";
+@import "https://fonts.googleapis.com/css2?family=Tangerine&display=swap";
+
+
+body {
+	margin : 0;
+	font-family: "Raleway", sans-serif;
+	background: rgb(249,249,249);
+}
+
+h1 {
+	font-size: 500%;
+	font-family:'Tangerine', cursive;
+	margin: 0;
+}
+
+.wrapper {
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+}
+
+a {
+	color: rgb(249,249,249);
+	text-decoration: none;
+}
+
+a:active {
+		color: rgb(200,200,200);
+}
+
+
+#titre {
+	order: 1;
+	padding-right: 2vw;
+}
+
+nav {
+	margin: 0;
+	padding: 2vw;
+	width: 100%;
+	background-color: rgb(144,144,144);
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+input {
+	display: none;
+}
+
+.nav-btn {
+	display: inline-block;
+}
+
+label {
+	display: inline-block;
+	font-size: 400%;
+}
+
+span {
+	padding: 0;
+	display: block;
+	width: 25px;
+	height: 10px;
+	border-top: 2px solid #eee;
+}
+
+ul {
+	display: none;
+
+	width: 100%;
+}
+
+li {
+	margin: 2vw;
+	list-style-type: none;
+}
+
+
+#nav-check:checked ~ ul {
+	display: flex;
+	flex-direction: column;
+	order: 2;
+	transition: all 2s ease-in;
+}
+
+
+
+
+
+
+
+section {
+	max-width: 64vw;
+	order: 2;
+	padding: 5vh;
+}
+
+aside {
+	order: 3;
+	width:100vw;
+	background: #FFFFFF;
+}
+
+aside p {
+	padding-top: 10vh;
+	text-align: center;
+}
+
+footer {
+	height: 15vh;
+	padding:0;
+	background-color: rgba(0,0,0,25%);
+}
+
+footer p {
+	text-align: center;
+	padding:5vh;
+}
