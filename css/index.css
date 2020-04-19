@@ -40,13 +40,14 @@ a:hover {
 	order: 1;
 	padding-top: 120px;
 	text-align: center;
+	width: 100vw;
 }
 
 #navigation {
-  display: flex;
+	display: flex;
 	flex-direction: column;
-  position: fixed;
 	left: 0;
+  position: fixed;
 	width: 100vw;
 	height: 50px;
 	background-color: rgb( 150, 150, 150);
@@ -66,15 +67,15 @@ span {
   display: block;
   width: 35px;
   height: 4px;
-  margin: 10px;
+  margin: 9px;
   background: #eee;
   border-radius: 3px;
 }
 
 ul {
-	position: relative;
   padding: 30px 50px;
 	background: #ededed;
+	flex: 1;
   transform-origin: 0% 0%;
   transform: translate(-100%, 0);
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
@@ -82,7 +83,6 @@ ul {
 
 ul li {
   padding: 10px 0;
-  font-size: 22px;
 }
 
 #navigation input:checked ~ ul {
@@ -97,14 +97,15 @@ section {
 	-ms-hyphens: auto;
 	hyphens: auto;
 
-	max-width: 70ex;
+	max-width: 90ex;
 	order: 2;
-	padding: 0 5em 0 5em;
+	padding: 0 5vw 0 5vw;
 }
 
 article {
-	text-indent: 5vw;
+	text-indent: 5ex;
 }
+
 aside {
 	order: 3;
 	width: 100vw;
