@@ -7,37 +7,49 @@ body {
 	margin : 0;
 	font-family: "Raleway", sans-serif;
 	background: rgb(249,249,249);
+	font-size: 2ex;
 }
 
 h1 {
-	font-size: 5em;
-	font-family:'Tangerine', cursive;
+	font-size: 5ex;
+}
+
+h2 {
+	font-size: 4ex;
+	padding:50px ;
 }
 
 .wrapper {
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
+	flex-direction: column;
+	align-items: center;
 }
 
 a {
 	text-decoration: none;
+  color: #232323;
 }
 
-a:active {
-	color: rgb(200,200,200);
+a:hover {
+  color: tomato;
 }
 
 #titre {
 	order: 1;
-	width: 100vw;
+	padding-top: 120px;
 	text-align: center;
 }
 
-nav {
-	width: 20vw;
-	height:100vh;
-	position: fixed;
+#navigation {
+  display: flex;
+	flex-direction: column;
+  position: fixed;
+	left: 0;
+	width: 100vw;
+	height: 50px;
+	background-color: rgb( 150, 150, 150);
 }
 
 input {
@@ -45,34 +57,57 @@ input {
 }
 
 label {
-	padding-left: 5vw;
-	font-size: 5em;
+	height: 50px;
+	width: 50px;
+	cursor: pointer;
+}
+
+span {
+  display: block;
+  width: 35px;
+  height: 4px;
+  margin: 10px;
+  background: #eee;
+  border-radius: 3px;
 }
 
 ul {
-	display: none;
-	width: 100%;
+	position: relative;
+  padding: 30px 50px;
+	background: #ededed;
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
 }
 
-li {
-	margin: 2vh;
-	list-style-type: none;
+ul li {
+  padding: 10px 0;
+  font-size: 22px;
 }
 
-
-#nav-check:checked ~ ul {
-	display: block;
+#navigation input:checked ~ ul {
+  transform: none;
 }
 
 section {
+	text-align: justify;
+	-moz-hyphens: auto;
+	-webkit-hyphens: auto;
+	-o-hyphens: auto;
+	-ms-hyphens: auto;
+	hyphens: auto;
+
 	max-width: 70ex;
 	order: 2;
 	padding: 0 5vh 0 5vh;
 }
 
+article {
+	text-indent: 5vw;
+}
 aside {
 	order: 3;
-	width:100vw;
+	width: 100vw;
 	background: #FFFFFF;
 }
 
