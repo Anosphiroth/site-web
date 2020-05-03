@@ -72,10 +72,6 @@ ul {
 
 	height: calc( 100vh - 50px);
 	margin: 0;
-  /*transform-origin: 0% 0%;
-  transform: translate(-100%, 0);
-  */
-
 
 	transform: translateX(-100%);
 	transition: transform 1s ease;
@@ -96,7 +92,6 @@ a:hover {
 ul li {
 	text-align: center;
 	height: 100%;
-
 }
 
 #menu-1{
