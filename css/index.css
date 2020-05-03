@@ -7,7 +7,7 @@ body {
 	margin : 0;
 	font-family: "Raleway", sans-serif;
 	background: rgb(249,249,249);
-	font-size: 2ex;
+	font-size: 3em;
 }
 
 h1 {
@@ -40,7 +40,7 @@ h2 {
 	left: 0;
   position: fixed;
 	width: 100vw;
-  height: 50px;
+  height: 10vh;
 	background-color: rgb( 150, 150, 150);
 }
 
@@ -50,19 +50,16 @@ input {
 
 label {
 	flex-shrink: 0;
-	height: 50px;
-	width: 50px;
+	height: 10vh;
+	width: 10vh;
 	cursor: pointer;
-	z-index: 10;
+	text-align: center;
 }
 
 span {
-  display: block;
-  width: 35px;
-  height: 4px;
-  margin: 9px;
-  background: #eee;
-  border-radius: 3px;
+	color: #fff;
+	font-size: 5.5ex;
+	position: relative;
 }
 
 ul {
@@ -70,7 +67,7 @@ ul {
 	flex-direction: column;
 	flex-shrink: 0;
 
-	height: calc( 100vh - 50px);
+	height: 90vh;
 	margin: 0;
 
 	transform: translateX(-100%);
