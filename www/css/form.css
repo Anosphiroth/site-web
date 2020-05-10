@@ -1,0 +1,42 @@
+form {
+  width: 80vw;
+  order:2;
+  margin: auto;
+}
+
+.hide {
+  display: none;
+  order:2;
+  margin: auto;
+  padding-bottom: 5vh;
+  float: right;
+}
+
+input[type=text], input[type=password] {
+  width: 75vw;
+  padding: 2ex 0 2ex 2ex;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #dce1de;
+  font-size: 0.8em
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #d2cbca;
+}
+
+#submit {
+  margin: 5vh 0 5vh 0;
+  float: none;
+}
+
+@media (min-width: 70em){
+  form {
+    width: 40vw;
+
+  }
+  input[type=text],input[type=password] {
+    width: 100%;
+  }
+
+}
