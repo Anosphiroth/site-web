@@ -12,7 +12,7 @@ try:
     import json
 except ImportError:
 	sys.path.append(os.getcwd() + '/htbin/simplejson')
-	import simplejson as json 
+	import simplejson as json
 
 cgitb.enable()
 
@@ -47,4 +47,3 @@ else:
 	data_file.write('\n')
 	data_file.close()
 	print((json.dumps(dict({'num': 0,'msg':'Message envoyé.'}))))
-

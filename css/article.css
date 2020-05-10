@@ -23,7 +23,7 @@ tbody tr:nth-child(even) {
 @media (max-width:70em) {
   table {
     float : left;
-    font-size: 1.4em;
+    font-size: 1em;
     margin-left: 10vw;
     display: flex;
     width: 70vw;
