@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+  <head>
+    <meta charset="UTF-8" />
+    <title>Accueil</title>
+    <link type="text/css" rel="stylesheet" href="../css/reset.css" >
+    <link type="text/css" rel="stylesheet" href="../css/index.css" >
+    <link type="text/css" rel="stylesheet" href="../css/form.css" >
+  </head>
+
+  <body>
+    <!--	Header -->
+    <header>
+      <a id="haut"></a>
+      <div class = "banner"></div>
+    </header>
+
+    <div class = "wrapper">
+      <div class = "titre">
+        <h1>SIGN IN</h1>
+      </div>
+
+      <!--	Main -->
+      <form id="connexion">
+          <input type="text" size=65 id="username" name="username" minlength="6" placeholder="Nom d'utilisateur">
+          <input type="text" size=65 id="userpwd" name="userpwd" placeholder="Mot de passe">
+          <input type="submit" value="Connexion" class="bouton" id ="submit">
+      </form>
+      <p id="msg" class="hide"></p>
+
+     <!--	Navigation -->
+      <nav>
+        <div id="navigation">
+          <input type="checkbox" id="menu">
+          <label for="menu"></label>
+          <ul>
+            <li id="menu-1"><a href="../index.html">Acceuil</a></li>
+            <li id="menu-2"><a href="projets.html">Projets</a></li>
+            <li id="menu-3"><a href="article.html">Article</a></li>
+            <li id="menu-4"><a href="cv.html">Curiculum Vitae</a></li>
+          </ul>
+        </div>
+      </nav>
+
+
+     </div>
+
+
+     <!--	Footer -->
+    <footer>
+      <figure>
+          <img rel="lightbox" src="../imgs/uca.png">
+          <figcaption><a href="https://www.uca.fr/">La page de l'UCA</a></figcaption>
+      </figure>
+      <a href="signup.html" class="bouton" id="signup">Inscription</a>
+      <a href="signin.html" class="bouton" id="signup">Connexion</a>
+      <a href="chat.html" class="bouton" id="signup" >Chat</a>
+      <a href="#haut" class="bouton">Haut de la page</a>
+    </footer>
+
+
+    <!-- Javascript -->
+    <script type="text/javascript" src="../js/scriptCo.js"></script>
+
+
+  </body>
+
+</html>
