@@ -1,0 +1,41 @@
+table {
+  float: right;
+  text-align: center;
+  border-collapse: collapse;
+  border: 1px solid #d5d5d5;
+  margin: 0 0 5vw 5vw;
+}
+
+thead {
+  background: rgb(0,0,100);
+  color: white;
+}
+
+th, td {
+  padding: 1em;
+  margin: 0;
+}
+
+tbody tr:nth-child(even) {
+  background: lightgrey;
+}
+
+@media (max-width:70em) {
+  table {
+    float : left;
+    font-size: 1em;
+    margin-left: 10vw;
+    display: flex;
+    width: 70vw;
+  }
+  tr {
+    display: flex;
+    flex-direction: column;
+  }
+
+  tbody {
+    display: flex;
+    overflow: auto;
+  }
+
+}
